@@ -1,0 +1,14 @@
+/*Intersection Observer Styling*/
+.hidden {
+    opacity: 0;
+    filter: blur(3px);
+    transform: translateY(10%);
+    transition: all 0.9s;
+    transition-delay: 300ms;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+}

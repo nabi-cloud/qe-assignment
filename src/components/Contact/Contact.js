@@ -2,11 +2,16 @@ import React, { useState } from 'react';
 import './Contact.css';
 // Images
 import contact from './contact.gif';
+// Animation
+import useIntersectionObserver from '../../animation/intersectionObserver';
+import '../../animation/intersectionObserver.css';
 
 function Contact() {
   const [ name, setName ] = useState('');
   const [ email, setEmail ] = useState('');
   const [ message, setMessage ] = useState('');
+
+  useIntersectionObserver('.hidden');
 
   // State setter when Name input has been filled out
   const handleNameChange = (event) => {
@@ -27,6 +32,7 @@ function Contact() {
   const handleSubmit = (event) => {
     event.preventDefault();
     // Perform any action with the form
+    alert('Thank you for your response!')
     console.log([name, email, message]);
     // Reset fields after submission
     setName('');
@@ -36,9 +42,9 @@ function Contact() {
 
   return (
     <div className='contactContainer'>
-        <img src={ contact } alt='Icon' />
-        <h1>Contact Us</h1>
-        <p>We value your feedback, inquiries, and partnership opportunities. Please feel free to reach out to us using the form below!</p>
+        <img src={ contact } alt='Icon' className='hidden' />
+        <h1 className='hidden'>Contact Us</h1>
+        <p className='hidden'>We value your feedback, inquiries, and partnership opportunities. Please feel free to reach out to us using the form below!</p>
         <form onSubmit={handleSubmit} id="contactForm" >
             <div className='formContainer'>
             <label htmlFor="name">Name:</label>

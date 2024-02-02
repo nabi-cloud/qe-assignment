@@ -7,15 +7,26 @@ nav {
     justify-content: center;
     position: fixed;
     width: 100%;
+    z-index: 1;
 }
 
 nav a {
+    color: #ffffff81;
+    border-radius: 5px;
     text-transform: uppercase;
     font-weight: 700;
+    padding: 0.5rem;
+    transition: all 0.4s ease;
+}
+
+nav a.active {
+    color: #ffffff;
+    background-color: #8667ff;
 }
 
 nav a:hover {
-    color: #010214;
+    color: #ffffff;
+    background-color: #8667ff;
 }
 
 main {
