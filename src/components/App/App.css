@@ -1,0 +1,23 @@
+nav {
+    align-items: center;
+    background-color: #6645eb;
+    display: flex;
+    column-gap: 2rem;
+    height: 67px;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+}
+
+nav a {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+nav a:hover {
+    color: #010214;
+}
+
+main {
+    width: 50%;
+}

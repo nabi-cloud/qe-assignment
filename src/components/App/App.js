@@ -1,6 +1,7 @@
 import React from 'react';
-import { RouterProvider, createBrowserRouter, createRoutesFromElements, Route } from 'react-router-dom';
+import { RouterProvider, createBrowserRouter, createRoutesFromElements, Route, Link } from 'react-router-dom';
 import Root, { ROUTES } from "../root/root";
+import './App.css';
 // Components
 import Home from '../Home/Home';
 import AboutUs from '../AboutUs/AboutUs';
@@ -18,7 +19,14 @@ const router = createBrowserRouter(createRoutesFromElements(
 
 function App() {
   return (
-    <RouterProvider router={router}/>
+    <RouterProvider router={ router }>
+      <div>
+        <Link className='link' to="/">Home</Link>
+        <Link className='link' to={ ROUTES.ABOUT_US }>About Us</Link>
+        <Link className='link' to={ ROUTES.SERVICES }>Services</Link>
+        <Link className='link' to={ ROUTES.CONTACT }>Contact</Link>
+      </div>
+    </RouterProvider>
   );
 };
 
