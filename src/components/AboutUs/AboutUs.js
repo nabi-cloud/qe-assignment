@@ -11,7 +11,7 @@ function AboutUs() {
   useIntersectionObserver('.hidden');
 
   return (
-    <div>
+    <div className='parentContainer'>
       <div className='container hidden'>
         <img src={ about } alt='Icon' />
         <h1>About OneQuantum Philippines</h1>

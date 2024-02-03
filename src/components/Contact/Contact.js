@@ -41,8 +41,8 @@ function Contact() {
   };
 
   return (
-    <div className='contactContainer'>
-        <img src={ contact } alt='Icon' className='hidden' />
+    <div className='parentContainer'>
+        <img src={ contact } alt='Icon' className='hidden icon' />
         <h1 className='hidden'>Contact Us</h1>
         <p className='hidden'>We value your feedback, inquiries, and partnership opportunities. Please feel free to reach out to us using the form below!</p>
         <form onSubmit={handleSubmit} id="contactForm" >

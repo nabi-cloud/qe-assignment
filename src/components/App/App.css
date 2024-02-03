@@ -16,7 +16,7 @@ nav a {
     text-transform: uppercase;
     font-weight: 700;
     padding: 0.5rem;
-    transition: all 0.4s ease;
+    transition: background-color 0.4s ease;
 }
 
 nav a.active {
@@ -29,6 +29,12 @@ nav a:hover {
     background-color: #8667ff;
 }
 
-main {
-    width: 50%;
+@media screen and (max-width: 720px) {
+    nav {
+        column-gap: 1rem;
+    }
+    
+    nav a {
+        font-size: 0.75rem;
+    }
 }

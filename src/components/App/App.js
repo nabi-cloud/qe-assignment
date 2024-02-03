@@ -22,12 +22,20 @@ function App() {
   return (
     <>
       <RouterProvider router={ router }>
-          <div>
-            <NavLink activeClassName="active" className='link' to="/">Home</NavLink>
-            <NavLink activeClassName="active" className='link' to={ ROUTES.ABOUT_US }>About Us</NavLink>
-            <NavLink activeClassName="active" className='link' to={ ROUTES.SERVICES }>Services</NavLink>
-            <NavLink activeClassName="active" className='link' to={ ROUTES.CONTACT }>Contact</NavLink>
-          </div>
+          <nav>
+            <NavLink activeClassName="active" className='link' to="/">
+                Home
+            </NavLink>
+            <NavLink activeClassName="active" className='link' to={ ROUTES.ABOUT_US }>
+                About Us
+            </NavLink>
+            <NavLink activeClassName="active" className='link' to={ ROUTES.SERVICES }>
+                Services
+            </NavLink>
+            <NavLink activeClassName="active" className='link' to={ ROUTES.CONTACT }>
+                Contact
+            </NavLink>
+          </nav>
       </RouterProvider>
       <Footer />
     </>

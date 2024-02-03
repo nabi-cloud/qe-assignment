@@ -1,5 +1,5 @@
-.contactContainer {
-    padding-top: 8rem;
+.icon {
+    margin-top: 8rem;
 }
 
 .formContainer {
@@ -43,4 +43,8 @@ textarea::placeholder {
 .formButton:hover {
     color: #ffffff81;
     background-color: rgb(102, 69, 235, 0.5);
+}
+
+@media screen and (max-width: 720px) {
+
 }

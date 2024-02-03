@@ -12,7 +12,7 @@ function Services() {
   useIntersectionObserver('.hidden');
 
   return (
-    <div>
+    <div className='parentContainer'>
       <div className='container hidden'>
         <img src={ services } alt='Icon' />
         <h1>Our Services</h1>
